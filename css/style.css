@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    background-color: #416798;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+header {
+    /* height: 90vh; */
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+h1.title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: white;
+
+}
+
+h2.subject {
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: #bbb8b8;
+
+}
+
+p.record {
+    line-height: 2.6rem;
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 1.4rem;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+}
+
+.picture {
+    text-align: center;
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 30%;
+
+}
+
+section.ark {
+    padding: 10px 0;
+    text-align: center;
+}
+
+div.arkContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+h3.arNumber {
+    display: inline-block;
+    margin: 10px 0;
+    line-height: 1.6rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: white;
+
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48;
+}
+
+section.popup {
+    display: none;
+}
+
+section.popup.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(39, 39, 39);
+    opacity: .97;
+    z-index: 1;
+}
+
+
+
+
+.titleAr {
+    font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    color: #3777ee
+}
+
+
+div.task {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    color: #bbb8b8;
+    cursor: pointer;
+}
+
+.taskAudio {
+    margin-bottom: 10px;
+}
+
+.taskAudio.active {
+
+    color: #3777ee
+}
+
+audio.player {
+    display: none;
+}
+
+
+audio.player.active {
+    display: block;
+    margin-top: 10vh;
+}
+
+
+div.wrapper {
+    min-height: calc(100vh - 70px);
+}
+
+footer {
+
+    line-height: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+@media (orientation: landscape) and (min-width:600px) {
+
+    div.task {
+        top: 15vh;
+        left: 10%;
+        transform: translateX(0);
+        margin: 0 auto;
+        width: 80%;
+
+
+    }
+
+    p.taskAudio {
+        display: inline-block;
+        margin: 0 20px
+    }
+
+    .titleAr {
+        height: 10%;
+
+
+    }
+
+    audio.player.active {
+        display: block;
+        margin: 40px auto 0 auto;
+    }
+
+}
+
+@media (min-width:820px) {
+
+    div.task {
+        font-size: 1.4rem;
+    }
+
+    .titleAr {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    audio.player.active {
+        display: block;
+        margin: 0 auto;
+    }
+
+    p.taskAudio {
+        margin: 60px 20px
+    }
+
+    h3.arNumber {
+        margin: 15px 0;
+        line-height: 1.4rem;
+        font-size: 1.2rem;
+
+    }
+}
+
+
+@media (min-width:1020px) {
+
+    h1.title {
+        font-size: 2.4rem;
+    }
+
+    h2.subject {
+        font-size: 3rem;
+    }
+
+    div.arkContent {
+
+        margin-top: 0;
+    }
+
+
+    section.ark {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* width: 100%; */
+    }
+
+    img {
+        width: 60%;
+
+    }
+
+    .picture {
+        flex-basis: 30%;
+    }
+
+    div.arkContent {
+        align-items: center;
+        flex-basis: 70%
+    }
+
+    h3.arNumber {
+        margin: 20px 0;
+        line-height: 1.8rem;
+        font-size: 1.4rem;
+
+    }
+
+
+}
